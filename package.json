@@ -1,0 +1,28 @@
+{
+  "name": "hello-jenkins",
+  "version": "1.0.0",
+  "description": "A super-simple Node.js app to test Jenkins",
+  "main": "index.js",
+  "scripts": {
+    "start": "./node_modules/forever/bin/forever start index.js",
+    "stop": "./node_modules/forever/bin/forever stop index.js",
+    "test": "./node_modules/mocha/bin/mocha -R xunit > test-results.xml"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:DrOfAwesomeness/hello-jenkins.git"
+  },
+  "author": "Matthew East",
+  "license": "CC0",
+  "bugs": {
+    "url": "https://github.com/DrOfAwesomeness/hello-jenkins/issues"
+  },
+  "homepage": "https://github.com/DrOfAwesomeness/hello-jenkins",
+  "dependencies": {
+    "chai": "^1.9.2",
+    "express": "^4.9.7",
+    "forever": "^0.11.1",
+    "mocha": "^1.21.5",
+    "request": "^2.45.0"
+  }
+}
